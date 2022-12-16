@@ -1,6 +1,6 @@
 function roundToFive(numbers) {
     for (let i = 0; i < numbers.length; i++) {
-       
+        return Math.round(numbers[i]);
     }
     return numbers;
 }
