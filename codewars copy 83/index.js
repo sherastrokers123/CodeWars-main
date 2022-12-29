@@ -1,3 +1,4 @@
-function DNAtoRNA(dna) {
-    return dna.replace(/T/g, 'U');
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    let res = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+    return res;
 }
