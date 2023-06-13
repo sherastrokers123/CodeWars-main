@@ -4,29 +4,29 @@ import './App.css';
 
 function App() {
 
-
   let [number, setNumber] = useState(1)
 
-  const onClickHandlerPlus = () => {
+  let onClickHandlerPlus = () => {
     setNumber(++number);
     console.log(number);
   }
 
-  const onClickHandlerMinus = () => {
+  let onClickHandlerMinus = () => {
     setNumber(--number);
-    console.log(number);
+    console.log(number)
   }
 
-  const resetClickHandler = () => {
+  let onClickHandlerReset = () => {
     setNumber(number = 0);
+    console.log(number)
   }
 
   return (
     <div className="App">
       <h1>{number}</h1>
-      <button onClick={onClickHandlerPlus}>Number + 1</button>
-      <button onClick={onClickHandlerMinus}>Number - 1</button>
-      <button onClick={resetClickHandler}>Reset counter</button>
+      <button onClick={onClickHandlerPlus}>Number +</button>
+      <button onClick={onClickHandlerReset}>Reset</button>
+      <button onClick={onClickHandlerMinus}>Number -</button>
     </div>
   );
 }
